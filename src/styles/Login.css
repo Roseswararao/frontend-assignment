@@ -1,0 +1,185 @@
+/* 🌟 Fullscreen Login Page */
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #ffffff; /* White Background */
+  padding: 20px;
+}
+
+/* 💼 Login Box */
+.login-container {
+  background: #fff;
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 380px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* 🔹 Header Styling */
+.login-container h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* 🔸 Subtitle */
+.login-subtitle {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+/* 🔹 Input Fields */
+.input-group {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px; /* Add spacing between inputs */
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  background: #f9f9f9;
+}
+
+/* 🔹 Input Hover & Focus */
+.input-group input:focus {
+  border-color: #28a745;
+  box-shadow: 0px 0px 6px rgba(40, 167, 69, 0.3);
+}
+
+/* 🔐 Password Field with Eye Icon */
+.password-group {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #666;
+  transition: color 0.3s ease-in-out;
+}
+
+.toggle-password:hover {
+  color: #28a745;
+}
+
+/* 🎯 Green Login Button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #28a745; /* Green */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+  font-weight: 700;
+  box-shadow: 0px 3px 8px rgba(40, 167, 69, 0.3);
+}
+
+.login-btn:hover {
+  background: #218838;
+  transform: scale(1.03);
+}
+
+.login-btn:active {
+  transform: scale(0.98);
+}
+
+/* 🔴 Error Message */
+.error {
+  color: #d9534f;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 5px;
+}
+
+/* ➕ Blue Sign Up Text */
+.signup-text {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.signup-text a {
+  color: #007bff; /* Blue */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.signup-text a:hover {
+  color: #0056b3;
+}
+
+/* 🌟 Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 480px) {
+  .login-container {
+    width: 90%;
+  }
+}
+
+/* Login.css */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 999;
+}
+
+.popup-content p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.popup button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup .logout-btn {
+  background: red;
+}

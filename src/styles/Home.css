@@ -1,0 +1,191 @@
+/* 🌟 Home Section */
+.home {
+  padding: clamp(40px, 10vw, 90px); /* Adaptive padding */
+  text-align: center;
+  color: #333;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* 🎉 Title Styling with Hover Effects */
+.home h1 {
+  font-size: clamp(2rem, 5vw, 3rem); /* Responsive font size */
+  font-weight: bold;
+  margin-bottom: 15px;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  animation: slideIn 0.8s ease-in-out forwards;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+/* 🔥 Hover Effects */
+.home h1:hover {
+  transform: scale(1.1) rotate(-2deg); /* Slight zoom-in & tilt */
+  text-shadow: 0px 6px 12px rgba(0, 123, 255, 0.5); /* Glow effect */
+}
+
+/* 💫 Wave Effect for Letters */
+.home h1 span {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.home h1:hover span {
+  animation: wave 1s infinite ease-in-out;
+}
+
+/* 🌊 Keyframe for Waving Letters */
+@keyframes wave {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); } /* Move letters up */
+  100% { transform: translateY(0px); }
+}
+
+/* 🎭 Apply Wave Effect to Each Letter with Delays */
+.home h1 span:nth-child(1) { animation-delay: 0s; }
+.home h1 span:nth-child(2) { animation-delay: 0.1s; }
+.home h1 span:nth-child(3) { animation-delay: 0.2s; }
+.home h1 span:nth-child(4) { animation-delay: 0.3s; }
+.home h1 span:nth-child(5) { animation-delay: 0.4s; }
+.home h1 span:nth-child(6) { animation-delay: 0.5s; }
+.home h1 span:nth-child(7) { animation-delay: 0.6s; }
+
+/* 📜 Description Styling */
+.home p {
+  font-size: clamp(1rem, 3vw, 1.4rem); /* Adaptive text size */
+  color: #555;
+  opacity: 0;
+  animation: fadeInText 1s ease-in-out forwards 0.5s;
+  max-width: 90%;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* 🎯 CTA Button */
+.home .cta-button {
+  padding: 12px 24px;
+  font-size: clamp(1rem, 2vw, 1.2rem); /* Responsive button text */
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 12px rgba(255, 75, 43, 0.3);
+  margin-top: 20px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🎨 Button Hover Effects */
+.home .cta-button:hover {
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(255, 75, 43, 0.5);
+}
+
+/* 🖱️ Button Click Animation */
+.home .cta-button:active {
+  transform: scale(0.95);
+  box-shadow: 0px 3px 8px rgba(255, 75, 43, 0.5);
+}
+
+/* 🌟 Button Glow Effect */
+.home .cta-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, transparent 50%);
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.4s ease-out;
+}
+
+.home .cta-button:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* 🚀 Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🎭 Bounce Animation for CTA */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.home .cta-button:hover {
+  animation: bounce 0.6s ease-in-out;
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 768px) {
+  .home {
+    padding: 50px 5%;
+  }
+
+  .home h1 {
+    font-size: 2rem;
+  }
+
+  .home .cta-button {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    padding: 30px 5%;
+  }
+
+  .home h1 {
+    font-size: 1.8rem;
+  }
+
+  .home p {
+    font-size: 1rem;
+  }
+
+  .home .cta-button {
+    width: 100%;
+  }
+}

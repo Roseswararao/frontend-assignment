@@ -1,0 +1,133 @@
+/* 🌟 Fullscreen Signup Page */
+.signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #ffffff;
+    padding: 20px;
+  }
+  
+  /* 💼 Signup Box */
+  .signup-container {
+    background: #fff;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* 🔹 Header Styling */
+  .signup-container h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* 🔸 Subtitle */
+  .signup-subtitle {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+  
+  /* 🔹 Input Fields */
+  .input-group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    background: #f9f9f9;
+  }
+  
+  /* 🔹 Input Hover & Focus */
+  .input-group input:focus {
+    border-color: #28a745;
+    box-shadow: 0px 0px 6px rgba(40, 167, 69, 0.3);
+  }
+  
+  /* 🔐 Password Field with Eye Icon */
+  .password-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #666;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .toggle-password:hover {
+    color: #28a745;
+  }
+  
+  /* ✅ Password Rules (Appears below Confirm Password) */
+  .password-rules {
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .password-rules p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    margin-right: 8px;
+  }
+  
+  .green {
+    color: #28a745;
+  }
+  
+  .red {
+    color: #d9534f;
+  }
+  
+  /* 🎯 Signup Button */
+  .signup-btn {
+    width: 100%;
+    padding: 12px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+  
+  .signup-btn:hover {
+    background: #218838;
+  }
+  
+  /* 📱 Responsive */
+  @media (max-width: 480px) {
+    .signup-container {
+      width: 90%;
+    }
+  }
+  
