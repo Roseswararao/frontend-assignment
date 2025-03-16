@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/frontend-assignment/static/css/main.db32edd1.css",
+    "main.js": "/frontend-assignment/static/js/main.8d2b5ea8.js",
+    "index.html": "/frontend-assignment/index.html",
+    "main.db32edd1.css.map": "/frontend-assignment/static/css/main.db32edd1.css.map",
+    "main.8d2b5ea8.js.map": "/frontend-assignment/static/js/main.8d2b5ea8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db32edd1.css",
+    "static/js/main.8d2b5ea8.js"
+  ]
+}
