@@ -1,8 +1,9 @@
-Frontend Internship Assignment
+Frontend Internship Assignment: 
 
-This is a Frontend Internship Assignment built using React.js. The project includes user authentication, a responsive UI, and a fully functional Todo Application with API integration.
+This is a Frontend Internship Assignment that showcases a fully responsive web application. The project includes user authentication, a task management system, and API integration to demonstrate frontend development skills.
 
-🚀 Live Demo
+
+🚀 Live Demo: 
 
 https://roseswararao.github.io/frontend-assignment/
 
@@ -22,16 +23,40 @@ frontend-internship-project/
 
 🎯 Features
 
-✅ User Authentication (Signup/Login)✅ Protected Routes (Only logged-in users can access certain pages)✅ Responsive UI (Mobile-friendly design)✅ Todo Application (Add, update, and delete tasks)✅ API Integration (Fetch and store data)✅ Deployed on GitHub Pages
+✅ User Authentication (Signup/Login)
+✅ Protected Routes (Only logged-in users can access certain pages)
+✅ Responsive UI (Mobile-friendly design)
+✅ Todo Application (Add, update, and delete tasks)
+✅ API Integration (Fetch and store data)
+✅ Deployed on GitHub Pages
 
-🛠️ Technologies Used
+🛠️ Tech Stack
 
-React.js (Frontend framework)
+Frontend: React, React Router, React Icons
 
-React Router (Navigation & routing)
+State Management: React Hooks (useState, useEffect)
 
-Axios (API requests)
+Styling: CSS Modules
 
-React Icons (For UI icons)
+API Handling: Axios
 
-GitHub Pages (For deployment)
+Deployment: GitHub Pages
+
+
+🏗️ Installation & Setup:
+1️⃣  Install Dependencies
+
+npm install
+
+2️⃣ Start the Development Server
+
+npm start
+
+This will run the app on http://localhost:3000/
+
+3️⃣ Build for Production
+
+npm run build
+
+4️⃣ Deploy to GitHub Pages
+npm run deploy
