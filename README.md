@@ -45,11 +45,11 @@ frontend-internship-project/
 
 🏗️ Installation & Setup:
 1. Install Dependencies
-npm install
+ :npm install
 2. Start the Development Server
-npm start
+ :npm start
 --> This will run the app on http://localhost:3000/
 3. Build for Production
-npm run build
+ :npm run build
 4. Deploy to GitHub Pages
-npm run deploy
+ :npm run deploy
