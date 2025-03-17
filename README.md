@@ -4,8 +4,9 @@ This is a Frontend Internship Assignment that showcases a fully responsive web a
 
 
 🚀 Live Demo: 
-
+This is the link to check my Assignment :
 https://roseswararao.github.io/frontend-assignment/
+
 
 📂 Project Structure
 
@@ -23,40 +24,31 @@ frontend-internship-project/
 
 🎯 Features
 
-✅ User Authentication (Signup/Login)
-✅ Protected Routes (Only logged-in users can access certain pages)
-✅ Responsive UI (Mobile-friendly design)
-✅ Todo Application (Add, update, and delete tasks)
-✅ API Integration (Fetch and store data)
-✅ Deployed on GitHub Pages
+1. User Authentication (Signup/Login)
+2. Protected Routes (Only logged-in users can access certain pages)
+3. Responsive UI (Mobile-friendly design)
+4. Todo Application (Add, update, and delete tasks)
+5. API Integration (Fetch and store data)
+6. Deployed on GitHub Pages
 
 🛠️ Tech Stack
 
-Frontend: React, React Router, React Icons
-
-State Management: React Hooks (useState, useEffect)
-
-Styling: CSS Modules
-
-API Handling: Axios
-
-Deployment: GitHub Pages
+1. Frontend: React, HTML, CSS, JavaScript
+2. State Management: React Hooks (useState, useEffect)
+3. Routing: React Router
+4. Styling: CSS Modules
+5. API Handling: Axios
+6. Deployment: GitHub Pages
+7. Other Tools: Git
 
 
 🏗️ Installation & Setup:
-1️⃣  Install Dependencies
-
+1. Install Dependencies
 npm install
-
-2️⃣ Start the Development Server
-
+2. Start the Development Server
 npm start
-
-This will run the app on http://localhost:3000/
-
-3️⃣ Build for Production
-
+--> This will run the app on http://localhost:3000/
+3. Build for Production
 npm run build
-
-4️⃣ Deploy to GitHub Pages
+4. Deploy to GitHub Pages
 npm run deploy
