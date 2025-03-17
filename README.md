@@ -8,6 +8,10 @@ This is the link to check my Assignment :
 
 https://roseswararao.github.io/frontend-assignment/
 
+🎥 Demo Video :
+
+[![Watch the Demo](https://img.icons8.com/ios/452/video.png)](https://drive.google.com/file/d/1yD4Ha4HOSpB3w7iC8d9WIlVzTUm1O92X/view?usp=drive_link)
+
 
 📂 Project Structure
 
