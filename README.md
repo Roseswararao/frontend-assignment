@@ -12,7 +12,9 @@ https://roseswararao.github.io/frontend-assignment/
 📂 Project Structure
 
 frontend-internship-project/
+
 │-- public/              # Static files (index.html, icons, etc.)
+
 │-- src/
 │   ├── components/      # Reusable components (Header, ProtectedRoute, etc.)
 │   ├── pages/           # Page components (Home, Login, Signup, Dashboard, Todo)
