@@ -1,6 +1,6 @@
 // src/pages/Login.js
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom"; // ✅ Use Link instead of <a>
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import "../styles/Login.css";
 
@@ -102,7 +102,7 @@ const Login = () => {
           </form>
 
           <p className="signup-text">
-            Don't have an account? <a href="/signup">Sign up</a>
+            Don't have an account? <Link to="/signup">Sign up</Link> {/* ✅ Fixed */}
           </p>
         </div>
       )}

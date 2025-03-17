@@ -14,7 +14,7 @@ const Header = () => {
     setMenuOpen(false);
 
     // ✅ Redirect to Login Page
-    navigate("/login", { replace: true });
+    navigate("/login", { replace: true }); // ✅ Automatically handled by HashRouter
   };
 
   return (
@@ -24,10 +24,10 @@ const Header = () => {
 
       {/* Desktop Navigation Links */}
       <div className="nav-links">
-        <Link to="/">Home</Link>
-        <Link to="/login">Login</Link>
-        <Link to="/dashboard">Dashboard</Link>
-        <Link to="/todo">Todo</Link>
+        <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+        <Link to="/login" onClick={() => setMenuOpen(false)}>Login</Link>
+        <Link to="/dashboard" onClick={() => setMenuOpen(false)}>Dashboard</Link>
+        <Link to="/todo" onClick={() => setMenuOpen(false)}>Todo</Link>
         <button className="logout-btn" onClick={handleLogout}>Logout</button>
       </div>
 

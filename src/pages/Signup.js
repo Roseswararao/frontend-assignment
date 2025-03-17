@@ -1,6 +1,6 @@
 // src/pages/Signup.js
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { FaEye, FaEyeSlash, FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 import "../styles/Signup.css";
 
@@ -29,11 +29,11 @@ const Signup = () => {
       return false;
     }
     if (!passwordCriteria.every(({ rule }) => rule.test(password))) {
-      setError("Password does not meet all requirements");
+      setError("Password does not meet all security requirements.");
       return false;
     }
     if (password !== confirmPassword) {
-      setError("Passwords do not match");
+      setError("Passwords do not match.");
       return false;
     }
     setError("");
@@ -44,13 +44,14 @@ const Signup = () => {
     e.preventDefault();
     if (validateForm()) {
       const existingUsers = JSON.parse(localStorage.getItem("users")) || [];
-      if (existingUsers.some((user) => user.email === email)) {
+
+      if (existingUsers.some((user) => user.email.toLowerCase() === email.toLowerCase())) {
         setError("Email is already registered!");
         return;
       }
 
-      // Save new user
-      const newUser = { email, password };
+      // Save new user securely
+      const newUser = { email: email.toLowerCase(), password };
       existingUsers.push(newUser);
       localStorage.setItem("users", JSON.stringify(existingUsers));
 
@@ -82,7 +83,7 @@ const Signup = () => {
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              onFocus={() => setShowPasswordRules(true)} // Show guidelines on focus
+              onFocus={() => setShowPasswordRules(true)}
               required
             />
             <span className="toggle-password" onClick={() => setShowPassword(!showPassword)}>
@@ -121,7 +122,7 @@ const Signup = () => {
         </form>
 
         <p className="login-text">
-          Already have an account? <a href="/login">Log in</a>
+          Already have an account? <Link to="/login">Log in</Link>
         </p>
       </div>
     </div>
