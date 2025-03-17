@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/frontend-assignment/static/css/main.db32edd1.css",
-    "main.js": "/frontend-assignment/static/js/main.8d2b5ea8.js",
+    "main.js": "/frontend-assignment/static/js/main.95373f68.js",
     "index.html": "/frontend-assignment/index.html",
     "main.db32edd1.css.map": "/frontend-assignment/static/css/main.db32edd1.css.map",
-    "main.8d2b5ea8.js.map": "/frontend-assignment/static/js/main.8d2b5ea8.js.map"
+    "main.95373f68.js.map": "/frontend-assignment/static/js/main.95373f68.js.map"
   },
   "entrypoints": [
     "static/css/main.db32edd1.css",
-    "static/js/main.8d2b5ea8.js"
+    "static/js/main.95373f68.js"
   ]
 }
