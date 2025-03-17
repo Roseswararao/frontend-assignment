@@ -5,7 +5,7 @@ import '../styles/Home.css';
 const Home = () => {
   return (
     <div className="home">
-      <h1>Welcome to Our Platform</h1>
+      <h1>Welcome to Our Platforms</h1>
       <p>Experience a seamless, modern, and professional UI.</p>
     </div>
   );
