@@ -16,13 +16,21 @@ frontend-internship-project/
 │-- public/              # Static files (index.html, icons, etc.)
 
 │-- src/
+
 │   ├── components/      # Reusable components (Header, ProtectedRoute, etc.)
+
 │   ├── pages/           # Page components (Home, Login, Signup, Dashboard, Todo)
+
 │   ├── styles/          # CSS styles for different components
+
 │   ├── App.js           # Main application component
+
 │   ├── index.js         # Entry point of the app
+
 │-- package.json         # Project dependencies and scripts
+
 │-- README.md            # Project documentation
+
 │-- .gitignore           # Files to be ignored by Git
 
 🎯 Features
